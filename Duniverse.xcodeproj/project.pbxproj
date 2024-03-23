@@ -14,6 +14,12 @@
 		4CAE8E492BAD37D1004EDD07 /* DuniverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE8E482BAD37D1004EDD07 /* DuniverseTests.swift */; };
 		4CAE8E532BAD37D1004EDD07 /* DuniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE8E522BAD37D1004EDD07 /* DuniverseUITests.swift */; };
 		4CAE8E552BAD37D1004EDD07 /* DuniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE8E542BAD37D1004EDD07 /* DuniverseUITestsLaunchTests.swift */; };
+		4CAE8E682BAD392F004EDD07 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAE8E672BAD392F004EDD07 /* WidgetKit.framework */; };
+		4CAE8E6A2BAD392F004EDD07 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAE8E692BAD392F004EDD07 /* SwiftUI.framework */; };
+		4CAE8E6D2BAD392F004EDD07 /* DuniverseWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE8E6C2BAD392F004EDD07 /* DuniverseWidgetBundle.swift */; };
+		4CAE8E6F2BAD392F004EDD07 /* DuniverseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE8E6E2BAD392F004EDD07 /* DuniverseWidget.swift */; };
+		4CAE8E712BAD3930004EDD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE8E702BAD3930004EDD07 /* Assets.xcassets */; };
+		4CAE8E752BAD3930004EDD07 /* DuniverseWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4CAE8E652BAD392F004EDD07 /* DuniverseWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = 4CAE8E332BAD37D0004EDD07;
 			remoteInfo = Duniverse;
 		};
+		4CAE8E732BAD3930004EDD07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CAE8E2C2BAD37D0004EDD07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAE8E642BAD392F004EDD07;
+			remoteInfo = DuniverseWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CAE8E792BAD3930004EDD07 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4CAE8E752BAD3930004EDD07 /* DuniverseWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4CAE8E342BAD37D0004EDD07 /* Duniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +71,13 @@
 		4CAE8E4E2BAD37D1004EDD07 /* DuniverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuniverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAE8E522BAD37D1004EDD07 /* DuniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuniverseUITests.swift; sourceTree = "<group>"; };
 		4CAE8E542BAD37D1004EDD07 /* DuniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CAE8E652BAD392F004EDD07 /* DuniverseWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DuniverseWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAE8E672BAD392F004EDD07 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4CAE8E692BAD392F004EDD07 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4CAE8E6C2BAD392F004EDD07 /* DuniverseWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuniverseWidgetBundle.swift; sourceTree = "<group>"; };
+		4CAE8E6E2BAD392F004EDD07 /* DuniverseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuniverseWidget.swift; sourceTree = "<group>"; };
+		4CAE8E702BAD3930004EDD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CAE8E722BAD3930004EDD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +102,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CAE8E622BAD392F004EDD07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAE8E6A2BAD392F004EDD07 /* SwiftUI.framework in Frameworks */,
+				4CAE8E682BAD392F004EDD07 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +120,8 @@
 				4CAE8E362BAD37D0004EDD07 /* Duniverse */,
 				4CAE8E472BAD37D1004EDD07 /* DuniverseTests */,
 				4CAE8E512BAD37D1004EDD07 /* DuniverseUITests */,
+				4CAE8E6B2BAD392F004EDD07 /* DuniverseWidget */,
+				4CAE8E662BAD392F004EDD07 /* Frameworks */,
 				4CAE8E352BAD37D0004EDD07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +132,7 @@
 				4CAE8E342BAD37D0004EDD07 /* Duniverse.app */,
 				4CAE8E442BAD37D1004EDD07 /* DuniverseTests.xctest */,
 				4CAE8E4E2BAD37D1004EDD07 /* DuniverseUITests.xctest */,
+				4CAE8E652BAD392F004EDD07 /* DuniverseWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +173,26 @@
 			path = DuniverseUITests;
 			sourceTree = "<group>";
 		};
+		4CAE8E662BAD392F004EDD07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CAE8E672BAD392F004EDD07 /* WidgetKit.framework */,
+				4CAE8E692BAD392F004EDD07 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CAE8E6B2BAD392F004EDD07 /* DuniverseWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4CAE8E6C2BAD392F004EDD07 /* DuniverseWidgetBundle.swift */,
+				4CAE8E6E2BAD392F004EDD07 /* DuniverseWidget.swift */,
+				4CAE8E702BAD3930004EDD07 /* Assets.xcassets */,
+				4CAE8E722BAD3930004EDD07 /* Info.plist */,
+			);
+			path = DuniverseWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +203,12 @@
 				4CAE8E302BAD37D0004EDD07 /* Sources */,
 				4CAE8E312BAD37D0004EDD07 /* Frameworks */,
 				4CAE8E322BAD37D0004EDD07 /* Resources */,
+				4CAE8E792BAD3930004EDD07 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4CAE8E742BAD3930004EDD07 /* PBXTargetDependency */,
 			);
 			name = Duniverse;
 			productName = Duniverse;
@@ -183,6 +251,23 @@
 			productReference = 4CAE8E4E2BAD37D1004EDD07 /* DuniverseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4CAE8E642BAD392F004EDD07 /* DuniverseWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CAE8E762BAD3930004EDD07 /* Build configuration list for PBXNativeTarget "DuniverseWidgetExtension" */;
+			buildPhases = (
+				4CAE8E612BAD392F004EDD07 /* Sources */,
+				4CAE8E622BAD392F004EDD07 /* Frameworks */,
+				4CAE8E632BAD392F004EDD07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuniverseWidgetExtension;
+			productName = DuniverseWidgetExtension;
+			productReference = 4CAE8E652BAD392F004EDD07 /* DuniverseWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +289,9 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 4CAE8E332BAD37D0004EDD07;
 					};
+					4CAE8E642BAD392F004EDD07 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 				};
 			};
 			buildConfigurationList = 4CAE8E2F2BAD37D0004EDD07 /* Build configuration list for PBXProject "Duniverse" */;
@@ -222,6 +310,7 @@
 				4CAE8E332BAD37D0004EDD07 /* Duniverse */,
 				4CAE8E432BAD37D1004EDD07 /* DuniverseTests */,
 				4CAE8E4D2BAD37D1004EDD07 /* DuniverseUITests */,
+				4CAE8E642BAD392F004EDD07 /* DuniverseWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +336,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAE8E632BAD392F004EDD07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAE8E712BAD3930004EDD07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +376,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CAE8E612BAD392F004EDD07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAE8E6D2BAD392F004EDD07 /* DuniverseWidgetBundle.swift in Sources */,
+				4CAE8E6F2BAD392F004EDD07 /* DuniverseWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +397,11 @@
 			isa = PBXTargetDependency;
 			target = 4CAE8E332BAD37D0004EDD07 /* Duniverse */;
 			targetProxy = 4CAE8E4F2BAD37D1004EDD07 /* PBXContainerItemProxy */;
+		};
+		4CAE8E742BAD3930004EDD07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CAE8E642BAD392F004EDD07 /* DuniverseWidgetExtension */;
+			targetProxy = 4CAE8E732BAD3930004EDD07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +523,7 @@
 		4CAE8E592BAD37D1004EDD07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +553,7 @@
 		4CAE8E5A2BAD37D1004EDD07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +656,60 @@
 			};
 			name = Release;
 		};
+		4CAE8E772BAD3930004EDD07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2566UQR5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuniverseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DuniverseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Duniverse.DuniverseWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CAE8E782BAD3930004EDD07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2566UQR5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuniverseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DuniverseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Duniverse.DuniverseWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +745,15 @@
 			buildConfigurations = (
 				4CAE8E5F2BAD37D1004EDD07 /* Debug */,
 				4CAE8E602BAD37D1004EDD07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CAE8E762BAD3930004EDD07 /* Build configuration list for PBXNativeTarget "DuniverseWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAE8E772BAD3930004EDD07 /* Debug */,
+				4CAE8E782BAD3930004EDD07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
